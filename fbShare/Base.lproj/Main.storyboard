@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-lf-PvZ">
+                                <rect key="frame" x="157" y="74" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0QW-OX-3iw"/>
+                                    <constraint firstAttribute="height" constant="30" id="sjv-cK-PiP"/>
+                                </constraints>
+                                <state key="normal" title="分享对话框"/>
+                                <connections>
+                                    <action selector="shareWindowBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3k-Gh-tAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-Ew-3kU">
+                                <rect key="frame" x="157" y="134" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HTK-hW-yek"/>
+                                    <constraint firstAttribute="width" constant="100" id="kcj-Fs-FbU"/>
+                                </constraints>
+                                <state key="normal" title="分享图片"/>
+                                <connections>
+                                    <action selector="shareImageClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk5-79-EYC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-EJ-tly">
+                                <rect key="frame" x="132" y="194" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fHF-Os-sx5"/>
+                                    <constraint firstAttribute="height" constant="30" id="wXm-Sn-04V"/>
+                                </constraints>
+                                <state key="normal" title="分享图片或视频"/>
+                                <connections>
+                                    <action selector="shareVideoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grY-pn-kfD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BH6-lf-PvZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CuM-at-D8M"/>
+                            <constraint firstItem="zpb-EJ-tly" firstAttribute="top" secondItem="YFi-Ew-3kU" secondAttribute="bottom" constant="30" id="JcM-SA-EHo"/>
+                            <constraint firstItem="YFi-Ew-3kU" firstAttribute="top" secondItem="BH6-lf-PvZ" secondAttribute="bottom" constant="30" id="MXc-KG-QRL"/>
+                            <constraint firstItem="BH6-lf-PvZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="XI9-sm-bWC"/>
+                            <constraint firstItem="zpb-EJ-tly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bds-ps-k2w"/>
+                            <constraint firstItem="YFi-Ew-3kU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmF-Bs-FVY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
